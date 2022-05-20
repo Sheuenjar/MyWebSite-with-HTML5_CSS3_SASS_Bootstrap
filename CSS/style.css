@@ -177,9 +177,10 @@ section.publicaciones {
     width: 100%;
     height: auto;
 }
+/* //BLOG */
 
 
-/* Pagina Sobre Nosotros */
+/*Sobre Nosotros */
     body.body-sn h2 {
         margin: 10px;
     }
