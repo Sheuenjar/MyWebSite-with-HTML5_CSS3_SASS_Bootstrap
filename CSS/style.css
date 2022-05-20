@@ -13,6 +13,8 @@ body p {
     font-size: 18px;
 }
 
+/* HEADER */
+
 header {
     background-color: #384e5b;
     padding: 5px;
@@ -115,40 +117,44 @@ ul li ul.submenu-productos {
         margin-left: 10px;
     }
 }
+/* //HEADER */
 
 
-main {
-    margin: 3%;
-}
 
+/* TODAS LAS PAGINAS */
 main h1 {
     margin-top: 130px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     font-size: 2.5rem;
     text-align: center;
 }
 
-    /* Blog */
 
+    /* BLOG */
 section.publicaciones {
-    background-color: grey;
-    padding-top: 30px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    margin: 20px;
+    background-color: #d9d9d9;
+    /* gap: 10px; */
+    /* width: 100vh; */
+    /* padding-top: 30px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-content: center;
+
 }
 
 .publicaciones .post {
-    transition: box-shadow 0.3s ease;
-    background-color: #fff;
-    margin: 2rem 0;
+    transition: box-shadow 0.2s ease;
+    background-color: #f9f9f9;
+    margin: auto auto;
     border-radius: 0.5rem;
     text-align: center;
     cursor: pointer;
-    width: 45%;
+    justify-content: space-around;
 }
 
-.publicaciones .post a {
+.publicaciones a {
     text-decoration: none;
     color: black;
 }
@@ -174,7 +180,6 @@ section.publicaciones {
 
 
 /* Pagina Sobre Nosotros */
-
     body.body-sn h2 {
         margin: 10px;
     }
