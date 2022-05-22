@@ -181,35 +181,56 @@ section.publicaciones {
 
 
 /*Sobre Nosotros */
-    body.body-sn h2 {
+    .body-sn h2 {
         margin: 10px;
+        margin-top: 25px;
     }
 
     .containersn {
+        margin: 15px;
         display: grid;
-        gap: 5px;
-        grid-template-areas: 
-        "texto imagen";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        background-color: aqua;
+        grid-template-columns: 1fr; /* cantidad de columnas */
     }
     
-    .containersn-item2 img {
+    .containersn-imagen img {
         grid-area: imagen;
-        height: 100%;
-        max-height: 1000px;
-        width: auto;
+        width: 100%;
+        height: auto;
     }
 
-    .containersn-item2 {
-        background-color: grey;
+    .containersn-info {
+        background-color: #d9d9d9;
+    }
+    .containersn-info h2, .masinfo h2{ 
+        text-align: center;
     }
 
-    .containersn-item1 p {
-        grid-area: texto;
-        font-size: 18px;
-        width: 50%;
+    .containersn-info p, .masinfo p {
+        margin: 25px;
+    }
+    .body-sn .masinfo {
+        margin: 15px;
+        background-color: #d9d9d9;
+    }
+    /* tablet */
+    @media (min-width: 775px) and (max-width: 1400px) { /* and (max-width: 1400px) */
+        .containersn {
+            grid-template-columns: 1fr 1fr;
+        }
+        .containersn-imagen {
+            margin: auto;
+        }
+        .containersn-info {
+            margin: auto;
+        }
+    }
+    @media (min-width: 1401px) {
+        .containersn {
+            grid-template-columns: 2fr 1fr;
+        }
+        .containersn-info {
+            margin: auto;
+        }
     }
 
 
