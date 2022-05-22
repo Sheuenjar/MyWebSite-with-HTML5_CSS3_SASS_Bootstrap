@@ -43,7 +43,9 @@
 
     <h1>Contactanos</h1>
 
-    <p>En esta seccion te invitamos a hacernos todas las consultas que necesites, te estaremos respondiendo lo mas breve posible. </p>
+    <div class="subtitulo">
+        <p>En esta seccion te invitamos a hacernos todas las consultas que necesites, te estaremos respondiendo lo mas breve posible. </p>
+    </div>
 
 
     <div class="imagenyformulario">
@@ -53,20 +55,20 @@
         </div>
 
         <form action="enviar.php" method="get" enctype="text/plain">
-            <div>
+            <div class="input1">
                 <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
             </div>
-            <div>
+            <div class="input2">
                 <input type="text" id="apellido" placeholder="Ingresa tu apellido">
             </div>
-            <div>
+            <div class="input3">
                 <input type="email" id="email" placeholder="Ingresa tu e-mail" required>
             </div>
-            <div>
+            <div class="input4">
                 <textarea name="comentarios" id="comentarios" cols="40" rows="5" placeholder="Dejanos tu comentario aca" required></textarea>
             </div>
             <br>
-            <div>
+            <div class="input5">
                 <input type="submit" value="enviar consulta">
             </div>
         </form>

@@ -14,7 +14,6 @@ body p {
 }
 
 /* HEADER */
-
 header {
     background-color: #384e5b;
     padding: 5px;
@@ -23,12 +22,9 @@ header {
     left: 0;
     right: 0;
 }
-
-
 .logo-icon {
     height: 70px;
 }
-
     .navigation {
         background-color: #384e5b;
         display: flex;
@@ -36,38 +32,31 @@ header {
         align-items: center;
         font-size: 17px;
 }
-
     .navigation li a {
         text-decoration: none;
         color: #d9d9d9;
         display: inline-block;
 }
-
     .navigation li a:hover {
         color: silver;
 }
-
     .nav-list {
         list-style-type: none;
 }
-
     .nav-list li {
         display: inline;
         position: relative;
         padding: 7px;
 }
-
     .menu {
         display: none;
 }
-
     .menu-line {
         width: 20px;
         height: 3px;
         background-color: white;
         margin-top: 4px;
 }
-
 ul li ul.submenu-productos {
     background-color: #384e5b;
     display: none;        /* oculto en reposo */
@@ -105,9 +94,7 @@ ul li ul.submenu-productos {
     }
     .menu a:hover {
         display: block;
-    }
-
-    
+    }    
       .nav-list li {
           display: block;
           border-top: 1px solid white;
@@ -141,9 +128,7 @@ section.publicaciones {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     align-content: center;
-
 }
-
 .publicaciones .post {
     transition: box-shadow 0.2s ease;
     background-color: #f9f9f9;
@@ -153,26 +138,21 @@ section.publicaciones {
     cursor: pointer;
     justify-content: space-around;
 }
-
 .publicaciones a {
     text-decoration: none;
     color: black;
 }
-
 .publicaciones .post:hover {
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.3);
 }
-
 .publicaciones .post h2 {
     margin-bottom: 30px;
     padding-top: 30px;
 }
-
 .publicaciones .post p {
     margin-top: 5px;
     padding-bottom: 5px;
 }
-
 .publicaciones .post img {
     width: 100%;
     height: auto;
@@ -185,26 +165,22 @@ section.publicaciones {
         margin: 10px;
         margin-top: 25px;
     }
-
     .containersn {
         margin: 15px;
         display: grid;
         grid-template-columns: 1fr; /* cantidad de columnas */
     }
-    
     .containersn-imagen img {
         grid-area: imagen;
         width: 100%;
         height: auto;
     }
-
     .containersn-info {
         background-color: #d9d9d9;
     }
     .containersn-info h2, .masinfo h2{ 
         text-align: center;
     }
-
     .containersn-info p, .masinfo p {
         margin: 25px;
     }
@@ -223,7 +199,8 @@ section.publicaciones {
         .containersn-info {
             margin: auto;
         }
-    }
+    } 
+    /* pantalla grande */
     @media (min-width: 1401px) {
         .containersn {
             grid-template-columns: 2fr 1fr;
@@ -235,41 +212,62 @@ section.publicaciones {
 
 
     /* Pagina de Contacto */
-
-    .body-ct input {
-        margin: 5px;
-        width: 250px;
-        height: 30px;
-    }
-    .body-ct input:focus {
-        width: 260px;
-        height: 30px;
-        background-color: rgb(245, 245, 245);
-    }
-    .body-ct textarea {
-        margin: 5px;
-    }
-    .body-ct textarea:focus {
-        background-color: rgb(245, 245, 245);
-    }
-
-    .imagenyformulario {
-        display: flex;
-    }
-
-    .imagenyformulario .imagenpform {
+    .body-ct .subtitulo p{
+        text-align: center;
         margin: 10px;
-        max-width: 700px;
+        margin-bottom: 20px;
     }
-
+    .imagenyformulario {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     .imagenyformulario .imagenpform img {
         width: 100%;
         height: auto;
     }
+    .imagenyformulario .imagenpform {
+        margin-bottom: 20px;
+    }
+    .body-ct form {
+        margin: 30px;
+    }
+    .body-ct form .input1, 
+    .body-ct form .input2, 
+    .body-ct form .input3,
+    .body-ct form .input4,
+    .body-ct form .input5 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .body-ct input {
+        margin: 5px;
+        width: 350px;
+        height: 35px;
+    }
+    .body-ct input:focus {
+        width: 370px;
+        height: 35px;
+        background-color: rgb(245, 245, 245);
+    }
+    .body-ct textarea {
+        margin: 5px;
+        margin-top: 15px;
+        width: 450px;
+    }
+    .body-ct textarea:focus {
+        width: 470px;
+        background-color: rgb(245, 245, 245);
+    }
+    .imagenyformulario {
+        /* display: flex; */
+    }
+    /* TABLET */
+    @media (min-width: 775px) and (max-width: 1400px) {
+
+    }
 
 
-
-
+/* FOOTER */
 .footer {
     background-color: #a9a9a9;
     display: flex;
