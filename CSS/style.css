@@ -4,14 +4,13 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
 body {
     background-color: #d9d9d9;
 }
-
 body p {
     font-size: 18px;
 }
+
 
 /* HEADER */
 header {
@@ -28,7 +27,7 @@ header {
     .navigation {
         background-color: #384e5b;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         font-size: 17px;
 }
@@ -99,10 +98,6 @@ ul li ul.submenu-productos {
           display: block;
           border-top: 1px solid white;
     }
-    .logo-icon {
-        margin-top: 10px;
-        margin-left: 10px;
-    }
 }
 /* //HEADER */
 
@@ -117,6 +112,7 @@ main h1 {
 }
 
 
+
     /* BLOG */
 section.publicaciones {
     margin: 20px;
@@ -125,7 +121,7 @@ section.publicaciones {
     /* width: 100vh; */
     /* padding-top: 30px; */
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     align-content: center;
 }
@@ -157,7 +153,14 @@ section.publicaciones {
     width: 100%;
     height: auto;
 }
+@media (min-width: 775px) {
+       section.publicaciones {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+       }
+}
 /* //BLOG */
+
 
 
 /*Sobre Nosotros */
@@ -209,6 +212,7 @@ section.publicaciones {
             margin: auto;
         }
     }
+    /* //Sobre Nosotros */
 
 
     /* Pagina de Contacto */
@@ -241,21 +245,21 @@ section.publicaciones {
     }
     .body-ct input {
         margin: 5px;
-        width: 350px;
+        width: 70%;
         height: 35px;
     }
     .body-ct input:focus {
-        width: 370px;
+        width: 75%;
         height: 35px;
         background-color: rgb(245, 245, 245);
     }
     .body-ct textarea {
         margin: 5px;
         margin-top: 15px;
-        width: 450px;
+        width: 80%;
     }
     .body-ct textarea:focus {
-        width: 470px;
+        width: 85%;
         background-color: rgb(245, 245, 245);
     }
     .imagenyformulario {
@@ -263,8 +267,32 @@ section.publicaciones {
     }
     /* TABLET */
     @media (min-width: 775px) and (max-width: 1400px) {
-
+        .imagenyformulario {
+            background-color: #d9d9d9;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .imagenpform {
+            margin: auto;
+        }
+        .imagenyformulario .imagenpform img {
+            margin: auto;
+        }
+        .imagenyformulario form {
+            align-content: center;
+        }
     }
+    @media (min-width: 1401px) {
+        .imagenyformulario {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .imagenyformulario form {
+            padding-top: 30px;
+        }
+    }
+/* //Contacto */
+
 
 
 /* FOOTER */
@@ -293,4 +321,7 @@ section.publicaciones {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.right-foot p {
+    font-size: 16px;
 }
