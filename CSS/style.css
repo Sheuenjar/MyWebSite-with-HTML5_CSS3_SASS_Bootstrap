@@ -110,6 +110,7 @@ main h1 {
     font-size: 2.5rem;
     text-align: center;
 }
+/* //TODAS LAS PAGINAS */
 
 
 
@@ -163,7 +164,7 @@ section.publicaciones {
 
 
 
-/*Sobre Nosotros */
+/*SOBRE NOSOTROS */
     .body-sn h2 {
         margin: 10px;
         margin-top: 25px;
@@ -212,10 +213,10 @@ section.publicaciones {
             margin: auto;
         }
     }
-    /* //Sobre Nosotros */
+    /* //SOBRE NOSOTROS */
 
 
-    /* Pagina de Contacto */
+    /* CONTACTO */
     .body-ct .subtitulo p{
         text-align: center;
         margin: 10px;
@@ -295,7 +296,7 @@ section.publicaciones {
             margin-left: 20px;
         }
     }
-/* //Contacto */
+/* //CONTACTO */
 
 
 
@@ -329,3 +330,17 @@ section.publicaciones {
 .right-foot p {
     font-size: 16px;
 }
+/* //FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
