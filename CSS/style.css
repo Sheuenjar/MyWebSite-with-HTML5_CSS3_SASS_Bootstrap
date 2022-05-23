@@ -27,7 +27,7 @@ header {
     .navigation {
         background-color: #384e5b;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         font-size: 17px;
 }
@@ -277,6 +277,7 @@ section.publicaciones {
         }
         .imagenyformulario .imagenpform img {
             margin: auto;
+            margin-left: 20px;
         }
         .imagenyformulario form {
             align-content: center;
@@ -289,6 +290,9 @@ section.publicaciones {
         }
         .imagenyformulario form {
             padding-top: 30px;
+        }
+        .imagenyformulario {
+            margin-left: 20px;
         }
     }
 /* //Contacto */
