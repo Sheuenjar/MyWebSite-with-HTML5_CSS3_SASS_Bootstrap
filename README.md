@@ -1,3 +1,3 @@
-# Pagina E-commerce/Blog de ArtesnosJoyas (emprendimiento personal)
-## Se trata de una pagina web e-commerce con blog 
-**La idea es lograr un blog con informacion relevante e interesante al igual que un e-commerce completamente funcional**
+# Sitio Web  E-commerce + Blog 
+## Sitio Web E-commerce con blog 
+**La idea es lograr un Blog con informacion relevante y un E-commerce completamente funcional (emprendimiento personal)**
