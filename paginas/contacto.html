@@ -7,6 +7,8 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="icon" href="../imagenes/logoCuadrado.jpg">
+    <!-- Bootstrap, CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body class="body-ct">
     
@@ -50,27 +52,20 @@
 
     <div class="imagenyformulario">
 
-        <div class="imagenpform">
-            <img src="../imagenes/libro-horizontal.jpg" alt="Dijehojalibro">
+        <div  class=""> <!-- imagenpform -->
+            <img src="../imagenes/libro-horizontal.jpg" class="img-fluid" alt="...">
         </div>
 
         <form action="enviar.php" method="get" enctype="text/plain">
-            <div class="input1">
-                <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
-            </div>
-            <div class="input2">
-                <input type="text" id="apellido" placeholder="Ingresa tu apellido">
-            </div>
-            <div class="input3">
-                <input type="email" id="email" placeholder="Ingresa tu e-mail" required>
-            </div>
-            <div class="input4">
-                <textarea name="comentarios" id="comentarios" cols="40" rows="5" placeholder="Dejanos tu comentario aca" required></textarea>
-            </div>
-            <br>
-            <div class="input5">
-                <input type="submit" value="enviar consulta">
-            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="button" class="btn btn-success">Success</button>
         </form>
 
     </div>
@@ -92,5 +87,7 @@
     </footer>
 
 
+    <!-- Bootstrap, JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
