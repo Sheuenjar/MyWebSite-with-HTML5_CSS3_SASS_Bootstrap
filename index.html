@@ -13,37 +13,55 @@
 
 <body>
   <header class="header">
-    <nav class="navigation">
-        <div class="logo">
-            <a href="./index.html" class="logo">
-                <img class="logo-icon" src="./imagenes/logoCuadrado.jpg" alt="logo">
-            </a>    
+    <nav class="navbar navbar-dark navbar-expand-lg"> <!-- bg-dark (background) -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./imagenes/logoCuadrado.jpg" alt="" width="90" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./paginas/blog-sites/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./paginas/sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./paginas/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tienda</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./paginas/tienda-sites/anillos.html">Anillos</a></li>
+                <li><a class="dropdown-item" href="./paginas/tienda-sites/aros.html">Aros</a></li>
+                <li><a class="dropdown-item" href="./paginas/tienda-sites/pulseras.html">Pulseras</a></li>
+                <li><a class="dropdown-item" href="./paginas/tienda-sites/dijes.html">Dijes</a></li>
+                <li><a class="dropdown-item" href="./paginas/tienda-sites/esclavas.html">Esclavas</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">filtra por piedras</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link disabled">Disabled</a> -->
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
         </div>
-            <ul class="nav-list">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./paginas/blog-sites/blog.html">Blog</a></li>
-                <li><a href="./paginas/sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="./paginas/contacto.html">Contacto</a></li>
-                <li><a href="./paginas/productos.html">Tienda</a>
-                    <ul class="submenu-productos">
-                        <li><a href="#">Pulseras</a></li>
-                        <li><a href="#">Anillos</a></li>
-                        <li><a href="#">Dijes</a></li>
-                        <li><a href="#">Aros</a></li>
-                        <li><a href="#">Esclavas</a></li>
-                    </ul>
-                </li>
-            </ul>
-        <div class="menu">
-            <div class="menu-line"><a href="#"></a></div>
-            <div class="menu-line"><a href="#"></a></div>
-            <div class="menu-line"><a href="#"></a></div>
-        </div>
+      </div>
     </nav>
 </header>
 
-
-
+      <!-- Carrusel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -71,6 +89,24 @@
         </button>
       </div>
 
+      <section class="categorias">
+      <div class="box">
+        <p>Anillos</p>
+      </div>
+      <div class="box">
+        <p>Aros</p>
+      </div>
+      <div class="box">
+        <p>Pulseras</p>
+      </div>
+      <div class="box">
+        <p>Esclavas</p>
+      </div>
+      <div class="box">
+        <p>Dijes</p>
+      </div>
+      </section>
+
 
       
       <footer class="footer">
@@ -85,7 +121,7 @@
 
 
 
-<!-- Bootstrap, JavaScript Bundle with Popper -->
+<!-- Bootstrap, JavaScript Bundle with Popper --> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

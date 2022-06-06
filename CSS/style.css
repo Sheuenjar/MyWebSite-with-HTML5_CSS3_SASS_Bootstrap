@@ -113,6 +113,14 @@ main h1 {
 /* //TODAS LAS PAGINAS */
 
 
+/* Index */
+.categorias {
+    background-color: grey;
+    display: grid;
+}
+
+
+
 
     /* BLOG */
 section.publicaciones {
@@ -235,9 +243,6 @@ section.publicaciones {
     }
     .imagenyformulario .imagenpform {
         margin-bottom: 20px;
-    }
-    .body-ct form {
-        margin: 30px;
     }
     .body-ct form .input1, 
     .body-ct form .input2, 
