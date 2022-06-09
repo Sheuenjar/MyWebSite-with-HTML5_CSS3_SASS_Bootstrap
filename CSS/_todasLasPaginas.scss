@@ -1,0 +1,19 @@
+/* TODAS LAS PAGINAS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    body {
+        background-color: #d9d9d9;
+        h1 {
+            margin-top: 130px;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}

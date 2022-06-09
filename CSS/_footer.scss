@@ -1,0 +1,27 @@
+/* FOOTER */
+.footer {
+    background-color: #a9a9a9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p {
+        margin: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s ease;
+        &:hover {
+            color: #384e5b;
+        }
+    }
+    .right-foot {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        font-size: 16px;
+        }
+    }
+
+}

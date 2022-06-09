@@ -1,4 +1,12 @@
 // comentario que no compila ;)
 
 @import 'vars';
-@import 'paginas';
+@import 'todasLasPaginas';
+@import 'header';
+@import 'footer';
+
+/* paginas */
+@import 'index';
+@import 'blog';
+@import 'sobreNosotros';
+@import 'contacto';
