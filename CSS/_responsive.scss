@@ -1,0 +1,61 @@
+
+/* BLOG */
+@media screen and (min-width: 775px) {
+    section.publicaciones {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+
+/* CONTACTO */
+@media (min-width: 775px) and (max-width: 1400px) {
+    .imagenyformulario {
+        background-color: #d9d9d9;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .imagenpform {
+        margin: auto;
+    }
+    .imagenyformulario .imagenpform img {
+        margin: auto;
+        margin-left: 20px;
+    }
+    .imagenyformulario form {
+        align-content: center;
+    }
+}
+@media (min-width: 1401px) {
+    .imagenyformulario {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .imagenyformulario form {
+        padding-top: 30px;
+    }
+}
+
+
+/* SOBRE NOSOTROS */
+//tablet
+@media (min-width: 775px) and (max-width: 1400px) { /* and (max-width: 1400px) */
+    .containersn {
+        grid-template-columns: 1fr 1fr;
+    }
+    .containersn-imagen {
+        margin: auto;
+    }
+    .containersn-info {
+        margin: auto;
+    }
+} 
+//pantalla grande
+@media (min-width: 1401px) {
+    .containersn {
+        grid-template-columns: 2fr 1fr;
+    }
+    .containersn-info {
+        margin: auto;
+    }
+}

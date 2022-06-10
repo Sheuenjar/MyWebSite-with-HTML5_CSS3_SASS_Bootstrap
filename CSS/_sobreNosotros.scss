@@ -12,7 +12,6 @@
     .containersn {
         margin: 15px;
         display: grid;
-        grid-template-columns: 1fr; /* cantidad de columnas */
         .containersn-imagen img {
             grid-area: imagen;
             width: 100%;
@@ -21,26 +20,5 @@
         .containersn-info h2 {
             text-align: center;
         }
-    }
-}
-/* tablet */
-@media (min-width: 775px) and (max-width: 1400px) { /* and (max-width: 1400px) */
-    .containersn {
-        grid-template-columns: 1fr 1fr;
-    }
-    .containersn-imagen {
-        margin: auto;
-    }
-    .containersn-info {
-        margin: auto;
-    }
-} 
-/* pantalla grande */
-@media (min-width: 1401px) {
-    .containersn {
-        grid-template-columns: 2fr 1fr;
-    }
-    .containersn-info {
-        margin: auto;
     }
 }

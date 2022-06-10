@@ -1,4 +1,10 @@
 /* VARIABLES */
+/* $colorPrincipal: ;
+$colorSecundario: ;
+$colorFondo: ;
+
+
+$fontPrincipal: ; */
 /* TODAS LAS PAGINAS */
 * {
   padding: 0;
@@ -13,8 +19,8 @@
 }
 
 * body h1 {
-  margin-top: 130px;
-  margin-bottom: 30px;
+  padding-top: 56px;
+  padding-bottom: 30px;
   font-size: 2.5rem;
   text-align: center;
 }
@@ -82,7 +88,11 @@ header {
 }
 
 /* BLOG */
-.body-blog section.publicaciones {
+.main-blog {
+  background-color: #d9d9d9;
+}
+
+.main-blog section.publicaciones {
   margin: 20px;
   background-color: #d9d9d9;
   /* gap: 10px; */
@@ -90,14 +100,12 @@ header {
   /* padding-top: 30px; */
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
   gap: 20px;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
-.body-blog section.publicaciones .post {
+.main-blog section.publicaciones .post {
   -webkit-transition: -webkit-box-shadow 0.2s ease;
   transition: -webkit-box-shadow 0.2s ease;
   transition: box-shadow 0.2s ease;
@@ -111,38 +119,29 @@ header {
       justify-content: space-around;
 }
 
-.body-blog section.publicaciones .post:hover {
+.main-blog section.publicaciones .post:hover {
   -webkit-box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.3);
           box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.3);
 }
 
-.body-blog section.publicaciones .post h2 {
+.main-blog section.publicaciones .post h2 {
   margin-bottom: 30px;
   padding-top: 30px;
 }
 
-.body-blog section.publicaciones .post p {
+.main-blog section.publicaciones .post p {
   margin-top: 5px;
   padding-bottom: 5px;
 }
 
-.body-blog section.publicaciones .post img {
+.main-blog section.publicaciones .post img {
   width: 100%;
   height: auto;
 }
 
-.body-blog section.publicaciones a {
+.main-blog section.publicaciones .post a {
   text-decoration: none;
   color: black;
-}
-
-@media (min-width: 775px) {
-  section.publicaciones {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
 }
 
 /* SOBRE NOSOTROS */
@@ -164,9 +163,6 @@ header {
   margin: 15px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  /* cantidad de columnas */
 }
 
 .body-sn .containersn .containersn-imagen img {
@@ -179,59 +175,42 @@ header {
   text-align: center;
 }
 
-/* tablet */
-@media (min-width: 775px) and (max-width: 1400px) {
-  /* and (max-width: 1400px) */
-  .containersn {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-  .containersn-imagen {
-    margin: auto;
-  }
-  .containersn-info {
-    margin: auto;
-  }
-}
-
-/* pantalla grande */
-@media (min-width: 1401px) {
-  .containersn {
-    -ms-grid-columns: 2fr 1fr;
-        grid-template-columns: 2fr 1fr;
-  }
-  .containersn-info {
-    margin: auto;
-  }
-}
-
 /* CONTACTO */
-.body {
+body.body-ct {
   background-color: #d9d9d9;
 }
 
-.body .subtitulo p {
+body.body-ct .subtitulo p {
   text-align: center;
   margin: 10px;
   margin-bottom: 20px;
 }
 
-.body .imagenyformulario {
+body.body-ct .imagenyformulario {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
 }
 
-.body .imagenyformulario .imagenpform {
+body.body-ct .imagenyformulario .imagenpform {
   margin-bottom: 20px;
 }
 
-.body .imagenyformulario .imagenpform img {
+body.body-ct .imagenyformulario .imagenpform img {
   width: 100%;
   height: auto;
 }
 
+/* BLOG */
+@media screen and (min-width: 775px) {
+  section.publicaciones {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* CONTACTO */
 @media (min-width: 775px) and (max-width: 1400px) {
   .imagenyformulario {
     background-color: #d9d9d9;
@@ -262,6 +241,31 @@ header {
   }
   .imagenyformulario form {
     padding-top: 30px;
+  }
+}
+
+/* SOBRE NOSOTROS */
+@media (min-width: 775px) and (max-width: 1400px) {
+  /* and (max-width: 1400px) */
+  .containersn {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .containersn-imagen {
+    margin: auto;
+  }
+  .containersn-info {
+    margin: auto;
+  }
+}
+
+@media (min-width: 1401px) {
+  .containersn {
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+  }
+  .containersn-info {
+    margin: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
