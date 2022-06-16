@@ -15,9 +15,15 @@ body.body-ct {
             width: 90%;
             height: auto;
         }
-        .btn--rojo {
-            @extend .btn;
-            background-color: red;
+        .container-boton-form {
+            display: flex;
+            justify-content: space-around;
+            .btn--extendido {
+                @extend .btn;
+                background-color: black;
+                color: white;
+                text-align: center;
+            }
         }
     }
 }

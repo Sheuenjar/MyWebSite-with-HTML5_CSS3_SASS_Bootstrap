@@ -1,11 +1,11 @@
 /* VARIABLES */
 /* base de boton para @extend */
-.btn, body.body-ct .imagenyformulario .btn--rojo {
-  display: inline;
-  width: 200px;
-  text-decoration: none;
-  padding: 10px 20px;
+.btn, body.body-ct .imagenyformulario .container-boton-form .btn--extendido {
+  display: inline-block;
+  padding: 10px;
   border: 1px solid #000;
+  width: 120px;
+  text-decoration: none;
   border-radius: 20px;
   font-weight: 700;
 }
@@ -218,8 +218,18 @@ body.body-ct .imagenyformulario .imagenpform img {
   height: auto;
 }
 
-body.body-ct .imagenyformulario .btn--rojo {
-  background-color: red;
+body.body-ct .imagenyformulario .container-boton-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body.body-ct .imagenyformulario .container-boton-form .btn--extendido {
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
 /* BLOG */

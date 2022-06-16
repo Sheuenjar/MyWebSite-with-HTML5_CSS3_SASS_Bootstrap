@@ -7,13 +7,17 @@ $colores: (
     fondo: #d9d9d9
 );
 
+@mixin boton { // valor no visible a reutilizar 
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
 /* base de boton para @extend */
 .btn {
-    display: inline;
-    width: 200px;
+    @include boton;
+    width: 120px;
     text-decoration: none;
-    padding: 10px 20px;
-    border: 1px solid #000;
     border-radius: 20px;
     font-weight: 700;
 }
