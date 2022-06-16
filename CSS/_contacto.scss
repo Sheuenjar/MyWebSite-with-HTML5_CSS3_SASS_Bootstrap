@@ -1,6 +1,6 @@
 /* CONTACTO */
 body.body-ct {
-    /* background-color: #d9d9d9; */
+    background: map-get($colores, fondo);
     .subtitulo p {
         text-align: center;
         margin: 10px;
