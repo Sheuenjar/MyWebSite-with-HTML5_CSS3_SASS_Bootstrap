@@ -1,7 +1,7 @@
 /* VARIABLES */
 /* $fontPrincipal: ; */
-/* $bordeNegro: 2px solid #000;
-
+/* $bordeNegro: 2px solid #000; */
+/*
 $mobile: 576px;
 $tablet: 768px;
 $desktop: 1200px; */
@@ -89,7 +89,7 @@ header {
 
 /* BLOG */
 .main-blog {
-  background-color: #d9d9d9;
+  /* background-color: #d9d9d9; */
 }
 
 .main-blog section.publicaciones {
@@ -177,7 +177,7 @@ header {
 
 /* CONTACTO */
 body.body-ct {
-  background-color: #d9d9d9;
+  /* background-color: #d9d9d9; */
 }
 
 body.body-ct .subtitulo p {
