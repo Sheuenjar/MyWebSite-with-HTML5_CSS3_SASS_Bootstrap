@@ -207,6 +207,9 @@ body.body-ct .subtitulo p {
 body.body-ct .imagenyformulario {
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body.body-ct .imagenyformulario .imagenpform {
