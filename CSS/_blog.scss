@@ -1,6 +1,6 @@
 /* BLOG */
 .main-blog {
-    /* background-color: #d9d9d9; */
+    background: map-get($colores, fondo);
     section.publicaciones {
         margin: 20px;
         background-color: #d9d9d9;

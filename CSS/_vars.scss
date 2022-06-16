@@ -1,5 +1,5 @@
-/* VARIABLES */
 
+/* VARIABLES */
 $colores: (
     bordo: #6f4144,
     rosaviejo: #9e7571,
@@ -7,7 +7,16 @@ $colores: (
     fondo: #d9d9d9
 );
 
-
+/* base de boton para @extend */
+.btn {
+    display: inline;
+    width: 200px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-weight: 700;
+}
 
 /* $fontPrincipal: ; */
 

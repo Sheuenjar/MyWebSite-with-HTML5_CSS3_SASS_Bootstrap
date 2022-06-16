@@ -1,10 +1,26 @@
 /* VARIABLES */
+/* base de boton para @extend */
+.btn, body.body-ct .imagenyformulario .btn--rojo {
+  display: inline;
+  width: 200px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
 /* $fontPrincipal: ; */
 /* $bordeNegro: 2px solid #000; */
 /*
 $mobile: 576px;
 $tablet: 768px;
 $desktop: 1200px; */
+/* HEADER */
+header {
+  background-color: #384e5b;
+}
+
 /* TODAS LAS PAGINAS */
 * {
   padding: 0;
@@ -16,22 +32,18 @@ $desktop: 1200px; */
 
 * body {
   background-color: #d9d9d9;
+  /* importo variable */
 }
 
-* body h1 {
+* h1 {
   padding-top: 56px;
   padding-bottom: 30px;
   font-size: 2.5rem;
   text-align: center;
 }
 
-* body p {
+* p {
   font-size: 18px;
-}
-
-/* HEADER */
-header {
-  background-color: #384e5b;
 }
 
 /* FOOTER */
@@ -89,7 +101,7 @@ header {
 
 /* BLOG */
 .main-blog {
-  /* background-color: #d9d9d9; */
+  background: #d9d9d9;
 }
 
 .main-blog section.publicaciones {
@@ -144,6 +156,12 @@ header {
   color: black;
 }
 
+/* BLOG SITES */
+body .body-blog-csjp iframe {
+  width: 90%;
+  height: auto;
+}
+
 /* SOBRE NOSOTROS */
 .body-sn {
   background-color: #d9d9d9;
@@ -196,8 +214,12 @@ body.body-ct .imagenyformulario .imagenpform {
 }
 
 body.body-ct .imagenyformulario .imagenpform img {
-  width: 100%;
+  width: 90%;
   height: auto;
+}
+
+body.body-ct .imagenyformulario .btn--rojo {
+  background-color: red;
 }
 
 /* BLOG */

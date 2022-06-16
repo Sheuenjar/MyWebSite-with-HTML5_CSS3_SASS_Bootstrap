@@ -5,7 +5,8 @@
     box-sizing: border-box;
     font-family: sans-serif;
     body {
-        background-color: map-get($colores, fondo);
+        background-color: map-get($colores, fondo); /* importo variable */
+        }
         h1 {
             padding-top: 56px;
             padding-bottom: 30px;
@@ -16,4 +17,6 @@
             font-size: 18px;
         }
     }
-}
+
+
+

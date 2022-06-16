@@ -12,8 +12,12 @@ body.body-ct {
             margin-bottom: 20px;
         }
         .imagenpform img {
-            width: 100%;
+            width: 90%;
             height: auto;
+        }
+        .btn--rojo {
+            @extend .btn;
+            background-color: red;
         }
     }
 }
