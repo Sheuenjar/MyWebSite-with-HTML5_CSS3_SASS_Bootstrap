@@ -26,5 +26,9 @@ body.body-ct {
                 text-align: center;
             }
         }
+        .form-label label{
+            display: flex;
+            justify-content: center;
+        }
     }
 }
