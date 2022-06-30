@@ -37,7 +37,6 @@ header {
 
 * body h1 {
   padding-top: 56px;
-  padding-bottom: 30px;
   font-size: 2.5rem;
   text-align: center;
 }
@@ -168,8 +167,11 @@ body .body-blog-csjp iframe {
 }
 
 .body-sn h2 {
-  margin: 10px;
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 20px;
   margin-top: 25px;
+  text-align: center;
 }
 
 .body-sn .masinfo {
