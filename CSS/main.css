@@ -94,8 +94,7 @@ header {
 /* INDEX */
 .categorias {
   background-color: grey;
-  display: -ms-grid;
-  display: grid;
+  /* display: grid; */
 }
 
 /* BLOG */
