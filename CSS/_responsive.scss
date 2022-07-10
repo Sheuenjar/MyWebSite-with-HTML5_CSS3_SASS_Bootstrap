@@ -20,11 +20,16 @@
 }
 
 /* CONTACTO */
-@media (min-width: 775px) and (max-width: 1400px) {
+@media (min-width: 900px) {
+    .body-ct {
+        .subtitulo {
+            p {
+                padding: 20px;
+            }
+        }
+    }
     .imagenyformulario {
-        background-color: #d9d9d9;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        margin: 20px;
     }
     .imagenpform {
         margin: auto;
@@ -33,10 +38,19 @@
         margin: auto;
         margin-left: 20px;
     }
-    .imagenyformulario form {
+    .imagenyformulario {
+        form {
         align-content: center;
+        }
     }
 }
+
+@media (min-width: 1020px) {
+    .imagenyformulario {
+        margin: 40px;
+    }
+}
+
 @media (min-width: 1401px) {
     .imagenyformulario {
         display: grid;
