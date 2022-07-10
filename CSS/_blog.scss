@@ -2,13 +2,10 @@
 .main-blog {
     background: map-get($colores, fondo);
     section.publicaciones {
-        padding: 20px;
+        padding: 30px;
         background-color: #d9d9d9;
-        /* gap: 10px; */
-        /* width: 100vh; */
-        /* padding-top: 30px; */
         display: grid;
-        gap: 20px;
+        gap: 40px;
         align-content: center;
         .post {
             transition: box-shadow 0.2s ease;

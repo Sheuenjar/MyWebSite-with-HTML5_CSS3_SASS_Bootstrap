@@ -98,14 +98,11 @@ header {
 }
 
 .main-blog section.publicaciones {
-  padding: 20px;
+  padding: 30px;
   background-color: #d9d9d9;
-  /* gap: 10px; */
-  /* width: 100vh; */
-  /* padding-top: 30px; */
   display: -ms-grid;
   display: grid;
-  gap: 20px;
+  gap: 40px;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -249,12 +246,16 @@ body.body-ct .imagenyformulario .form-label label {
 }
 
 /* BLOG */
-@media screen and (min-width: 575px) {
+@media (min-width: 575px) {
   section.publicaciones {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+  section.publicaciones .post h2 {
+    margin-bottom: 10px;
+    padding-top: 10px;
   }
 }
 
