@@ -275,6 +275,31 @@ body.body-ct .imagenyformulario .form-label label {
   }
 }
 
+/* Blog Sites */
+@media screen and (min-width: 780px) {
+  .main-blogSite .h2-1 {
+    margin-left: 1rem;
+  }
+  .main-blogSite .h2-3 {
+    margin-right: 1rem;
+  }
+  .main-blogSite p {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-blogSite .h2-1 {
+    margin-left: 2rem;
+  }
+  .main-blogSite .h2-3 {
+    margin-right: 2rem;
+  }
+  .main-blogSite p {
+    padding: 2rem;
+  }
+}
+
 /* CONTACTO */
 @media (min-width: 900px) {
   .body-ct .subtitulo p {
@@ -394,5 +419,33 @@ body.body-ct .imagenyformulario .form-label label {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+}
+
+.main-blogSite h1 {
+  padding-bottom: 15px;
+  margin: 0 1rem;
+}
+
+.main-blogSite h2 {
+  padding-top: 20px;
+}
+
+.main-blogSite .h2-1 {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.main-blogSite .h2-2 {
+  text-align: center;
+}
+
+.main-blogSite .h2-3 {
+  text-align: end;
+  padding-right: 1rem;
+}
+
+.main-blogSite p {
+  margin: 0 1rem;
+  line-height: 31px;
 }
 /*# sourceMappingURL=main.css.map */
