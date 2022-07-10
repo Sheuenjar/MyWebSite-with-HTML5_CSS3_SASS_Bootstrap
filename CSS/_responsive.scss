@@ -1,11 +1,17 @@
 
 /* BLOG */
-@media screen and (min-width: 775px) {
+@media screen and (min-width: 575px) {
     section.publicaciones {
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
     }
+@media screen and (min-width: 1200px) {
+    section.publicaciones {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 /* CONTACTO */
 @media (min-width: 775px) and (max-width: 1400px) {
@@ -37,24 +43,85 @@
 
 
 /* SOBRE NOSOTROS */
-//tablet
-@media (min-width: 775px) and (max-width: 1400px) { /* and (max-width: 1400px) */
+// tablet
+@media (min-width: 970px) and (max-width: 1199px) { /* and (max-width: 1400px) */
     .containersn {
         grid-template-columns: 1fr 1fr;
+        padding: 26px;
     }
     .containersn-imagen {
         margin: auto;
     }
     .containersn-info {
         margin: auto;
+        padding-right: 20px;
     }
-} 
+    .main-sn .masinfo{
+        h2 {
+            padding: 10px;
+        }
+    }
+}
+@media (min-width: 1200px) and (max-width: 1400px){
+    .containersn{
+        grid-template-columns: 1fr 1fr;
+        h2 {
+        padding: 10px;
+        }
+        .containersn-info {
+            padding-right: 20px;
+        }
+    }
+    .main-sn .masinfo{
+        h2 {
+            padding: 10px;
+        }
+    }
+}
 //pantalla grande
-@media (min-width: 1401px) {
+@media (min-width: 1401px) and (max-width: 1536px) {
     .containersn {
         grid-template-columns: 2fr 1fr;
+        padding: 35px;
+        h2 {
+            padding: 30px;
+        }
     }
     .containersn-info {
         margin: auto;
+        padding-right: 20px;
+    }
+    .main-sn .masinfo{
+        h2 {
+            padding: 10px;
+        }
+    }
+}
+
+//desktop
+@media (min-width: 1537px) {
+    .containersn {
+        grid-template-columns: 2fr 1fr;
+        margin: 30px;
+        h2 {
+            padding: 30px;
+        }
+        p {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    .containersn-info {
+        padding-right: 20px;
+    }
+    .main-sn .masinfo{
+        margin: 30px;
+        h2 {
+            padding: 30px;
+        }
+        p {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
     }
 }
