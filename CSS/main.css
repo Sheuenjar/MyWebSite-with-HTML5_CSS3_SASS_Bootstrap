@@ -180,6 +180,7 @@ body .body-blog-csjp iframe {
   grid-area: imagen;
   width: 100%;
   height: auto;
+  border-radius: 35px;
 }
 
 .body-sn .containersn .containersn-info {
@@ -486,5 +487,14 @@ body.body-ct .imagenyformulario .form-label label {
 .main-blogSite p {
   margin: 1rem;
   line-height: 31px;
+  text-align: center;
+}
+
+.main-blogSite .videotutorial {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */
