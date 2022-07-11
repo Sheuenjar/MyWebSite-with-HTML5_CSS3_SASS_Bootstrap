@@ -1,4 +1,22 @@
 .main-blogSite {
+    background: map-get($colores, fondo);
+    .form-form {
+        .boton-ct {
+            display: flex;
+            button {
+                justify-content: center;
+            }
+        }
+    }
+    .talles-container1 {
+        margin-bottom: 3rem;
+    }
+    .talles-container1, .talles-container2 {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
     h1 {
         padding-bottom: 15px;
         margin: 0 1rem;
@@ -18,7 +36,7 @@
         padding-right: 1rem;
     }
     p {
-        margin: 0 1rem;
+        margin: 1rem;
         line-height: 31px;
     }
 }

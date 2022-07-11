@@ -276,7 +276,24 @@ body.body-ct .imagenyformulario .form-label label {
 }
 
 /* Blog Sites */
+@media screen and (max-width: 779px) {
+  .main-blogSite .talles-container1, .main-blogSite .talles-container2 {
+    padding: 1rem;
+  }
+}
+
 @media screen and (min-width: 780px) {
+  .main-blogSite .talles-container1, .main-blogSite .talles-container2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 2rem;
+  }
   .main-blogSite .h2-1 {
     margin-left: 1rem;
   }
@@ -294,9 +311,6 @@ body.body-ct .imagenyformulario .form-label label {
   }
   .main-blogSite .h2-3 {
     margin-right: 2rem;
-  }
-  .main-blogSite p {
-    padding: 2rem;
   }
 }
 
@@ -421,6 +435,31 @@ body.body-ct .imagenyformulario .form-label label {
   }
 }
 
+.main-blogSite {
+  background: #d9d9d9;
+}
+
+.main-blogSite .form-form .boton-ct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-blogSite .form-form .boton-ct button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-blogSite .talles-container1 {
+  margin-bottom: 3rem;
+}
+
+.main-blogSite .talles-container1 img, .main-blogSite .talles-container2 img {
+  width: 100%;
+  height: auto;
+}
+
 .main-blogSite h1 {
   padding-bottom: 15px;
   margin: 0 1rem;
@@ -445,7 +484,7 @@ body.body-ct .imagenyformulario .form-label label {
 }
 
 .main-blogSite p {
-  margin: 0 1rem;
+  margin: 1rem;
   line-height: 31px;
 }
 /*# sourceMappingURL=main.css.map */

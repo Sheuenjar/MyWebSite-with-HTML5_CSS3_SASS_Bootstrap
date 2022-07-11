@@ -20,8 +20,23 @@
 }
 
 /* Blog Sites */
+@media screen and (max-width: 779px) {
+    .main-blogSite {
+        .talles-container1, .talles-container2 {
+            padding: 1rem;
+        }
+    }
+}
+
 @media screen and (min-width: 780px) {
     .main-blogSite {
+        .talles-container1, .talles-container2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: flex-end;
+            padding: 2rem;
+        }
         .h2-1 {
             margin-left: 1rem;
         }
@@ -41,12 +56,8 @@
         .h2-3 {
             margin-right: 2rem;
         }
-        p {
-            padding: 2rem;
-        }
     }
 }
-
 
 /* CONTACTO */
 @media (min-width: 900px) {
